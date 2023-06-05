@@ -1,32 +1,84 @@
-# Machine Learning API
-Este repositório contém uma API de Machine Learning desenvolvida com o objetivo de demonstrar a construção de uma API utilizando o microframework Flask em Python e abordar conceitos relacionados ao desenvolvimento de modelos de Machine Learning.
+# Machine Learning Flask API
 
-## Visão geral
-Neste repositório, você encontrará uma implementação de uma API de Machine Learning que abrange os seguintes tópicos:
+This repository contains a Machine Learning API developed whose purpose is to demonstrate the construction of an API using the Flask microframework in Python and cover concepts related to the development of Machine Learning models.
 
-* Construção de uma API básica com um único endpoint, utilizando o microframework Flask.
-* Teste da API em diferentes cenários, incluindo o uso de navegadores e ferramentas como o Postman.
-* Consumo de APIs externas e internas, utilizando o Postman e a biblioteca Requests em Python.
-* Integração de modelos pré-treinados e modelos desenvolvidos pelo usuário.
-* Utilização de serialização para garantir a consistência dos modelos usados na API.
-* Implementação de autenticação básica para proteger o acesso à API.
-* Implantação da aplicação em diferentes ambientes, incluindo servidores em cloud.
-* Gerenciamento de dependências usando virtualenv e requirements.
+## Project Organization
 
-## Ambiente de desenvolvimento
-Para executar este projeto, é necessário ter o seguinte ambiente de desenvolvimento configurado:
+    ├── LICENSE
+    ├── Makefile           <- Makefile with commands like `make data` or `make train`
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    │
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         `1.0-jqp-initial-data-exploration`.
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── src                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes src a Python module
+    │   │
+    │   ├── data           <- Scripts to download or generate data
+    │   │   └── make_dataset.py
+    │   │
+    │   ├── features       <- Scripts to turn raw data into features for modeling
+    │   │   └── build_features.py
+    │   │
+    │   ├── models         <- Scripts to train models and then use trained models to make
+    │   │   │                 predictions
+    │   │   ├── predict_model.py
+    │   │   └── train_model.py
+    │   │
+    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │       └── visualize.py
+    │
+    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
-* Python 3.x: É recomendado utilizar a versão mais recente do Python 3.
-* Flask: O microframework Flask é utilizado para construir a API. Você pode instalá-lo usando o gerenciador de pacotes pip: pip install flask.
-* Dependências adicionais: Caso a API utilize outras bibliotecas específicas, elas serão mencionadas no arquivo requirements.txt no repositório.
+## Overview
+In this repository, you will find an implementation of a Machine Learning API that covers the following topics:
 
-Certifique-se de configurar um ambiente virtual para o projeto, a fim de evitar conflitos com outras dependências do Python. Você pode criar um ambiente virtual usando a ferramenta venv nativa do Python ou utilizar outras ferramentas populares como o conda.
+* Building a basic API with a single endpoint using the Flask microframework.
+* Testing the API in different scenarios, including browser-based testing and tools like Postman.
+* Consuming external and internal APIs using Postman and the Requests library in Python.
+* Integrating pre-trained models and user-developed models.
+* Utilizing serialization to ensure consistency of the models used in the API.
+* Implementing basic authentication to protect API access.
+* Deploying the application in various environments, including cloud servers.
+* Managing dependencies using virtualenv and requirements.
 
-## Aprofundamento
-Este repositório oferece uma visão geral do desenvolvimento de APIs de Machine Learning. Caso você deseje se aprofundar nos tópicos relacionados, recomenda-se explorar outros recursos disponíveis, como cursos e documentação específica sobre desenvolvimento web, Flask, verbos HTTP, arquiteturas de API, autenticação, entre outros.
+## Development Environment
+To run this project, you need to have the following development environment set up:
 
-## Contribuição
-Este repositório foi criado com o intuito de servir como exemplo e base para o desenvolvimento de APIs de Machine Learning. Caso você tenha sugestões, melhorias ou correções, sinta-se à vontade para contribuir. Basta fazer um fork deste repositório, realizar as modificações desejadas e enviar um pull request.
+* Python 3.x: It is recommended to use the latest version of Python 3.
+* Flask: The Flask microframework is used to build the API. You can install it using the pip package manager: pip install flask.
+* Additional dependencies: If the API uses other specific libraries, they will be mentioned in the requirements.txt file in the repository.
 
-## Suporte
-Caso você tenha alguma dúvida ou precise de suporte, por favor, abra uma issue neste repositório. Faremos o possível para ajudar e fornecer a orientação necessária.
+Make sure to set up a virtual environment for the project to avoid conflicts with other Python dependencies. You can create a virtual environment using the built-in venv tool in Python or use other popular tools like conda.
+
+## Deepening
+This repository provides an overview of Machine Learning API development. If you want to delve deeper into related topics, we recommend exploring other available resources, such as courses and documentation specifically focused on web development, Flask, HTTP verbs, API architectures, authentication, and more.
+
+## Contribution
+This repository was created to serve as an example and foundation for the development of Machine Learning APIs. If you have any suggestions, improvements, or fixes, feel free to contribute. Simply fork this repository, make the desired modifications, and submit a pull request.
+
+## Support
+If you have any questions or need support, please open an issue in this repository. We will do our best to assist you and provide the necessary guidance.
+
+--------
+
+<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
