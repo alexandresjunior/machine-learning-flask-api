@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_basicauth import BasicAuth
 from textblob import TextBlob
-from sklearn.linear_model import LinearRegression
 import pickle
 import os
 
@@ -22,7 +21,7 @@ def home():
 @basic_auth.required
 def sentimento(frase):
     tb = TextBlob(frase)
-    tb_en = tb.translate(to='en')
+    tb_en = tb.translate(from_lang='pt_br', to='en')
     polaridade = tb_en.sentiment.polarity
     return "polaridade: {}".format(polaridade)
 
