@@ -1,0 +1,5 @@
+# This file must be included into gitignore
+env_variables:
+  BASIC_AUTH_USERNAME: root
+  BASIC_AUTH_PASSWORD: root
+  PORT: 5000
